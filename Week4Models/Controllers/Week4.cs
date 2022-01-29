@@ -13,13 +13,18 @@ namespace Week4Models.Controllers
         {
             foreach(Doge doge in input)
             {
-                System.Console.WriteLine(doge.Name);
+                System.Console.WriteLine(returnString(doge.Name));
 
             }
             //returning input
             return Accepted(input);
         }
+        string returnString(string input)
+        {
+            return input;
+        }
     }
+    
     public class Doge
     {
         public string Id { get; set; }
